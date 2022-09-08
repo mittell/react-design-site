@@ -30,15 +30,15 @@ const Hero = () => {
 		setShowModal(!showModal);
 	};
 
-	const variant = {
-		hover: {
-			y: 15,
-			transition: {
-				yoyo: Infinity,
-				duration: 0.6,
-			},
-		},
-	};
+	// const variant = {
+	// 	hover: {
+	// 		y: 15,
+	// 		transition: {
+	// 			yoyo: Infinity,
+	// 			duration: 0.6,
+	// 		},
+	// 	},
+	// };
 
 	const { ref, inView } = useInView({
 		rootMargin: '-100px',
