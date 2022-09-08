@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { FiMail } from 'react-icons/fi';
 import {
 	HeroSection,
@@ -16,15 +16,15 @@ import { useInView } from 'react-intersection-observer';
 // import Modal from '../Modal/Modal';
 
 const Hero = () => {
-	const variant = {
-		hover: {
-			y: 15,
-			transition: {
-				yoy: Infinity,
-				duration: 0.6,
-			},
-		},
-	};
+	// const variant = {
+	// 	hover: {
+	// 		y: 15,
+	// 		transition: {
+	// 			yoy: Infinity,
+	// 			duration: 0.6,
+	// 		},
+	// 	},
+	// };
 
 	const { ref, inView } = useInView({
 		rootMargin: '-100px',

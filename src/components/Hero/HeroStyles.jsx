@@ -58,6 +58,7 @@ export const ImageCharacter = styled(motion.img)`
 		top: 4rem;
 		right: 200px;
 		width: clamp(170px, 15vw, 230px);
+
 		@media screen and (max-width: 768px) {
 			right: 50%;
 			transform: translateX(50%);
@@ -67,6 +68,7 @@ export const ImageCharacter = styled(motion.img)`
 		bottom: 4rem;
 		right: 200px;
 		z-index: 100;
+
 		@media screen and (max-width: 768px) {
 			right: 50px;
 		}
@@ -74,6 +76,7 @@ export const ImageCharacter = styled(motion.img)`
 	&.three {
 		top: 3rem;
 		left: 150px;
+        
 		@media screen and (max-width: 768px) {
 			display: none;
 		}
