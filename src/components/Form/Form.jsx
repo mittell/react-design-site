@@ -12,7 +12,7 @@ import {
 	FormMessage,
 } from './FormStyles';
 import { Container } from '../../globalStyles';
-// import validateForm from './validateForm';
+import validateForm from './validateForm';
 
 const Form = () => {
 	const [name, setName] = useState('');
@@ -49,6 +49,20 @@ const Form = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+
+		const resultError = validateForm({ name, email, subject, message });
+
+		if (resultError !== null) {
+			setError(resultError);
+			return;
+		}
+
+		setName('');
+		setEmail('');
+		setSubject('');
+		setMessage('');
+		setError(null);
+		setSuccess('Message was sent!');
 	};
 
 	const messageVariants = {
