@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Background, CloseModalButton, ModalWrapper } from './ModalStyles';
-// import Form from '../Form/Form';
+import Form from '../Form/Form';
 
 const Modal = ({ showModal, toggleModal }) => {
 	const modalRef = useRef();
@@ -11,21 +11,6 @@ const Modal = ({ showModal, toggleModal }) => {
 			toggleModal();
 		}
 	};
-
-	const keyPress = useCallback(
-		(e) => {
-			if (e.key && showModal) {
-				toggleModal();
-			}
-		},
-		[showModal, toggleModal]
-	);
-
-	useEffect(() => {
-		document.addEventListener('keydown', keyPress);
-
-		return () => document.removeEventListener('keydown', keyPress);
-	});
 
 	const backgroundVariants = {
 		initial: {
@@ -76,7 +61,7 @@ const Modal = ({ showModal, toggleModal }) => {
 						initial='initial'
 						exit={{ opacity: 0, y: '-100vh' }}
 					>
-						{/* <Form></Form> */}
+						<Form></Form>
 						<CloseModalButton aria-label='Close modal' onClick={toggleModal} />
 					</ModalWrapper>
 				</Background>
