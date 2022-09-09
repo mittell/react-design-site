@@ -76,7 +76,7 @@ export const ImageCharacter = styled(motion.img)`
 	&.three {
 		top: 3rem;
 		left: 150px;
-        
+
 		@media screen and (max-width: 768px) {
 			display: none;
 		}
@@ -153,7 +153,7 @@ export const HeroButton = styled(motion.button)`
 		right: 3rem;
 		width: 64px;
 		height: 64px;
-		padding: 10px;
+		padding: 13px;
 		background-color: #ef4b6c;
 		border-radius: 50%;
 	}
