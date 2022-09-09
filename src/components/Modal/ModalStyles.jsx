@@ -23,7 +23,7 @@ export const ModalWrapper = styled(motion.div)`
 	color: #000;
 	display: flex;
 	position: relative;
-	overflow: scroll;
+	overflow: none;
 	border-radius: 10px;
 	z-index: 100;
 `;
