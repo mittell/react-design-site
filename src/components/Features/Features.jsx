@@ -8,7 +8,6 @@ import {
 	FeatureColumn,
 	FeatureImageWrapper,
 	FeatureName,
-	FeaturetextWrapper,
 	FeatureTextWrapper,
 } from './FeaturesStyles';
 import { featuresData } from '../../data/FeaturesData';
